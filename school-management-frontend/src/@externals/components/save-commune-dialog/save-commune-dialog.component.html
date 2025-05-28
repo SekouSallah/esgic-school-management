@@ -1,0 +1,27 @@
+<fuse-loading-bar [autoMode]="showLoading"></fuse-loading-bar>
+<h1 class="text-center text-2xl font-bold" mat-dialog-title>Création d'une commune</h1>
+<mat-dialog-content class="py-6">
+    <div class="space-y-6">
+        <!-- Alert -->
+        <fuse-alert *ngIf="showAlert" [@shake]="alert.type === 'error'" [appearance]="'outline'" [showIcon]="true" [type]="alert.type"
+                    class="mt-4">
+            {{ alert.message }}
+        </fuse-alert>
+
+        <!-- Sign Up form -->
+        <form #saveSpecNgForm="ngForm" [formGroup]="formGroup" class="space-y-6">
+
+            <!-- Name field -->
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Nom</mat-label>
+                <input formControlName="nom" id="nom" matInput placeholder="Entrez le nom de la commune">
+                <mat-icon matSuffix>business</mat-icon>
+                <mat-error *ngIf="formGroup.get('nom').hasError('required')">Champ obligatoire</mat-error>
+            </mat-form-field>
+        </form>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions class="justify-between">
+    <button (click)="onNoClick()" color="warn" mat-button>Annuler</button>
+    <button (click)="saveCommune()" [disabled]="formGroup.invalid" class="base-bg-color" mat-button>Enregistrer</button>
+</mat-dialog-actions>

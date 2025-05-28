@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e22166fb-9efd-499b-a653-5d6bd88cfda2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/DatabaseInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/SchoolManagementBackendApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/CommuneController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/GraviteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/QuartierController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/SignalementController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/StatutController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/UtilisateurController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/dtos/SignalementDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/AbstractEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Commune.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Gravite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Quartier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Signalement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Statut.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Utilisateur.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/enums/FuiteGravite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/enums/FuiteType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/enums/SignalementEtat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/exceptions/UtilisateurNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/exceptions/handlers/RestExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/CommuneRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/GraviteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/QuartierRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/SignalementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/StatutRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/UtilisateurRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/Paths.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/ResetPasswordDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/auditors/AuditorAwareImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/auditors/AuditorConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/configs/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/configs/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/converter/Jwt2AuthenticationConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/converter/Jwt2AuthoritiesConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/listeners/UserAuditService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/oauth/AuthenticationDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/oauth/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/oauth/JwtService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/oauth/SecurityBusiness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/oauth/SecurityController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/oauth/SecurityService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/oauth/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/providers/OpenEndpointsProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/CommuneService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/GraviteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/QuartierService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/SignalementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/StatutService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/UtilisateurService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/test/java/com/esgic/aquasentrybackend/AquaSentryBackendApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2xhCsmjr35DmCYIjacm9cDWdX3b" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.esgic-school-management [clean].executor": "Run",
+    "Maven.esgic-school-management [compile].executor": "Run",
+    "Maven.esgic-school-management [validate].executor": "Run",
+    "Maven.school-management-backend [clean].executor": "Run",
+    "Maven.school-management-backend [compile].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "git-widget-placeholder": "master",
+    "go.import.settings.migrated": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/home/sekou/j2ee-spring-apps/esgic-school-management",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "show.migrate.to.gradle.popup": "false",
+    "ts.external.directory.path": "/snap/intellij-idea-ultimate/604/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="school-management-backend" />
+      <option name="SPRING_BOOT_MAIN_CLASS" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fbdcb00ec9e3-intellij.indexing.shared.core-IU-251.25410.129" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-IU-251.25410.129" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e22166fb-9efd-499b-a653-5d6bd88cfda2" name="Changes" comment="" />
+      <created>1748381130761</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1748381130761</updated>
+      <workItem from="1748381132388" duration="1234000" />
+      <workItem from="1748431777790" duration="592000" />
+      <workItem from="1748441367424" duration="598000" />
+      <workItem from="1748454980139" duration="1679000" />
+      <workItem from="1748456687718" duration="230000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
+  </component>
+  <component name="com.apollographql.ijplugin.settings.ProjectSettingsState">
+    <option name="hasEnabledGraphQLPluginApolloKotlinSupport" value="true" />
+    <option name="lspPassPathToSuperGraphYaml" value="false" />
+    <option name="telemetryInstanceId" value="96d3fded-e55d-462e-bb3e-0886ff387a4b" />
+  </component>
+</project>

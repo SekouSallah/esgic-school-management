@@ -1,0 +1,161 @@
+:host {
+    display: block;
+    min-height: 100vh;
+    background-color: #f3f4f6;
+}
+
+swiper {
+    max-height: 400px;
+    .swiper-slide {
+        display: flex;
+        flex-direction: row;
+        transition: transform 0.5s ease-in-out;
+    }
+    .swiper-button-prev, .swiper-button-next {
+        color: #d4a017;
+    }
+    .swiper-pagination-bullet {
+        background: #d4a017;
+    }
+}
+
+mat-form-field {
+    transition: all 0.2s ease-in-out;
+    font-size: 14px;
+
+    &:focus-within {
+        mat-label {
+            color: #d4a017;
+        }
+        .mat-form-field-outline {
+            border-color: #d4a017;
+        }
+    }
+}
+
+button {
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 6px;
+
+    &:hover:not(:disabled) {
+        background-color: #1d4ed8;
+    }
+
+    &:disabled {
+        background-color: #d1d5db;
+        cursor: not-allowed;
+    }
+}
+
+.bg-blue-900 {
+    background-color: #1a3c5a;
+}
+
+.text-blue-900 {
+    color: #1a3c5a;
+}
+
+.bg-blue-600 {
+    background-color: #2563eb;
+}
+
+.text-white {
+    color: #fff;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 640px) {
+    swiper {
+        max-height: 300px;
+        .swiper-slide {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        video {
+            width: 100%;
+            height: 160px;
+        }
+    //    .w-1/2 {
+    //    width: 100%;
+    //    padding-left: 0;
+    //}
+        h2 {
+            font-size: 1.5rem;
+        }
+        p {
+            font-size: 0.875rem;
+        }
+        button {
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+        }
+    }
+
+    .lg\:flex-row {
+        flex-direction: column;
+    }
+
+    .lg\:w-1\/2 {
+        width: 100%;
+    }
+
+    .max-w-md {
+        max-width: 100%;
+    }
+
+    form {
+        gap: 0.75rem;
+    }
+
+    mat-form-field, button {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+    swiper {
+        max-height: 350px;
+        video {
+            height: 200px;
+        }
+    }
+
+    form {
+        gap: 1rem;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :host {
+        background-color: #111827;
+    }
+
+    .bg-white {
+        background-color: #1f2937;
+    }
+
+    .text-gray-600 {
+        color: #d1d5db;
+    }
+
+    .text-blue-900 {
+        color: #60a5fa;
+    }
+
+    mat-form-field {
+        .mat-form-field-label {
+            color: #d1d5db;
+        }
+        .mat-form-field-outline {
+            border-color: #4b5563;
+        }
+        input, textarea {
+            color: #e5e7eb;
+        }
+    }
+}
