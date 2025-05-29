@@ -52,7 +52,7 @@ import {
 })
 export class ListCommuneComponent implements OnInit, OnDestroy {
 
-    displayedColumns = ['id', 'nom', 'createdBy', 'createdAt', 'actions'];
+    displayedColumns = ['id', 'nom', 'libelle', 'createdBy', 'createdAt', 'actions'];
     currentPage = 0;
     pageSize = 10;
     totalElements = 0;

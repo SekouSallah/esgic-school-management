@@ -50,7 +50,7 @@ import {SaveGraviteDialogComponent} from "../../../../../../@externals/component
 })
 export class ListGraviteComponent implements OnInit, OnDestroy {
 
-    displayedColumns = ['id', 'libelle', 'createdBy', 'createdAt', 'actions'];
+    displayedColumns = ['id', 'libelle', 'montant', 'createdBy', 'createdAt', 'actions'];
     currentPage = 0;
     pageSize = 10;
     totalElements = 0;
@@ -172,8 +172,8 @@ export class ListGraviteComponent implements OnInit, OnDestroy {
 
     deleteGravite(element: Gravite) {
         const confirmation = this._fuseConfirmationService.open({
-            title: 'Suppression de Gravité',
-            message: 'Êtes-vous sûr de vouloir supprimer cette gravité ?',
+            title: 'Suppression de Niveau d\'étude',
+            message: 'Êtes-vous sûr de vouloir supprimer ce niveau ?',
             actions: {
                 confirm: {
                     label: 'Supprimer',
@@ -186,7 +186,7 @@ export class ListGraviteComponent implements OnInit, OnDestroy {
                 this.graviteService.delete(element?.id).subscribe({
                     next: data => {
                         this.reloadDataForPagination();
-                        this._dialogService.openDialog("Gravité supprimée avec succès", true);
+                        this._dialogService.openDialog("Niveau supprimé avec succès", true);
                     },
                     error: err => {
                         this._dialogService.openDialog(err.error.message || err.error, false);

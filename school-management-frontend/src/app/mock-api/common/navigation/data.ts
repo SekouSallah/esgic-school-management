@@ -5,45 +5,61 @@ import { Helpers } from 'app/main/helpers/Helpers';
 export const defaultNavigation: FuseNavigationItem[] = [
     {
         id: 'aquasentry',
-        title: 'AQUA SENTRY',
+        title: 'SCHOOL MANAGEMENT',
         type: 'group',
         icon: 'mat_solid:water_drop', // Icône plus adaptée pour Aqua Sentry (eau)
         children: [
-            {
-                id: 'aquasentry.dashboard',
-                title: 'Tableau de Bord',
-                type: 'basic',
-                icon: 'mat_solid:dashboard',
-                link: '/aqua-sentry/dashboard',
-                hidden: () => !Helpers.hasRole('ADMINISTRATEUR'),
-            },
+            // {
+            //     id: 'aquasentry.dashboard',
+            //     title: 'Tableau de Bord',
+            //     type: 'basic',
+            //     icon: 'mat_solid:dashboard',
+            //     link: '/school-management/dashboard',
+            //     hidden: () => !Helpers.hasRole('ADMINISTRATEUR'),
+            // },
             {
                 id: 'aquasentry.signalement',
-                title: 'Gestion des Signalements',
+                title: 'Gestion des étudiants',
                 type: 'collapsable',
                 icon: 'mat_solid:report_problem', // Icône adaptée pour signalements
                 hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
                 children: [
                     {
                         id: 'aquasentry.signalement.list',
-                        title: 'Liste des fuites',
+                        title: 'Liste des étudiants',
                         type: 'basic',
-                        link: '/apps/signalements',
+                        link: '/apps/etudiants',
                         icon: 'mat_solid:leak_add', // Icône pour fuites
                     },
                     {
                         id: 'aquasentry.configurations.gravites',
-                        title: 'Gravités de fuite',
+                        title: 'Niveaux d\'études',
                         type: 'basic',
-                        link: '/apps/gravites',
+                        link: '/apps/niveaux',
                         icon: 'mat_solid:warning', // Icône pour gravité
                     },
+                ],
+            },
+            {
+                id: 'aquasentry.inscription',
+                title: 'Gestion des inscriptions',
+                type: 'collapsable',
+                icon: 'mat_solid:report_problem', // Icône adaptée pour signalements
+                hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
+                children: [
                     {
-                        id: 'aquasentry.configurations.statuts',
-                        title: 'Statuts',
+                        id: 'aquasentry.inscription.list',
+                        title: 'Liste des inscriptions',
                         type: 'basic',
-                        link: '/apps/statuts',
-                        icon: 'mat_solid:assignment', // Icône pour statuts
+                        link: '/apps/inscription',
+                        icon: 'mat_solid:leak_add', // Icône pour fuites
+                    },
+                    {
+                        id: 'aquasentry.inscription.filieres',
+                        title: 'Filières',
+                        type: 'basic',
+                        link: '/apps/filieres',
+                        icon: 'mat_solid:warning', // Icône pour gravité
                     },
                 ],
             },
@@ -64,29 +80,6 @@ export const defaultNavigation: FuseNavigationItem[] = [
                     },
                 ],
             },
-            {
-                id: 'aquasentry.configurations',
-                title: 'Configuration',
-                type: 'collapsable',
-                icon: 'mat_solid:settings', // Icône pour configuration
-                hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
-                children: [
-                    {
-                        id: 'aquasentry.configurations.communes',
-                        title: 'Communes',
-                        type: 'basic',
-                        link: '/apps/communes',
-                        icon: 'mat_solid:location_city', // Icône pour communes
-                    },
-                    {
-                        id: 'aquasentry.configurations.quartiers',
-                        title: 'Quartiers',
-                        type: 'basic',
-                        link: '/apps/quartiers',
-                        icon: 'mat_solid:map', // Icône pour quartiers
-                    },
-                ],
-            },
         ]
     }
 ];
@@ -103,7 +96,7 @@ export const compactNavigation: FuseNavigationItem[] = [
                 title: 'Tableau de Bord',
                 type: 'basic',
                 icon: 'mat_solid:dashboard',
-                link: '/aqua-sentry/dashboard',
+                link: '/school-management/dashboard',
                 hidden: () => !Helpers.hasRole('ADMINISTRATEUR'),
             },
             {
@@ -192,7 +185,7 @@ export const futuristicNavigation: FuseNavigationItem[] = [
                 title: 'Tableau de Bord',
                 type: 'basic',
                 icon: 'mat_solid:dashboard',
-                link: '/aqua-sentry/dashboard',
+                link: '/school-management/dashboard',
                 hidden: () => !Helpers.hasRole('ADMINISTRATEUR'),
             },
             {
@@ -272,45 +265,31 @@ export const futuristicNavigation: FuseNavigationItem[] = [
 export const horizontalNavigation: FuseNavigationItem[] = [
     {
         id: 'aquasentry',
-        title: 'AQUA SENTRY',
+        title: 'SCHOOL MANAGEMENT',
         type: 'group',
         icon: 'mat_solid:water_drop',
         children: [
-            {
-                id: 'aquasentry.dashboard',
-                title: 'Tableau de Bord',
-                type: 'basic',
-                icon: 'mat_solid:dashboard',
-                link: '/aqua-sentry/dashboard',
-                hidden: () => !Helpers.hasRole('ADMINISTRATEUR'),
-            },
+
             {
                 id: 'aquasentry.signalement',
-                title: 'Gestion des Signalements',
+                title: 'Gestion des étudiants',
                 type: 'collapsable',
                 icon: 'mat_solid:report_problem',
                 hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
                 children: [
                     {
                         id: 'aquasentry.signalement.list',
-                        title: 'Liste des fuites',
+                        title: 'Liste des étudiants',
                         type: 'basic',
-                        link: '/apps/signalements',
+                        link: '/apps/etudiants',
                         icon: 'mat_solid:leak_add',
                     },
                     {
                         id: 'aquasentry.configurations.gravites',
-                        title: 'Gravités de fuite',
+                        title: "Niveaux d'études",
                         type: 'basic',
-                        link: '/apps/gravites',
+                        link: '/apps/niveaux',
                         icon: 'mat_solid:warning',
-                    },
-                    {
-                        id: 'aquasentry.configurations.statuts',
-                        title: 'Statuts',
-                        type: 'basic',
-                        link: '/apps/statuts',
-                        icon: 'mat_solid:assignment',
                     },
                 ],
             },
@@ -333,23 +312,23 @@ export const horizontalNavigation: FuseNavigationItem[] = [
             },
             {
                 id: 'aquasentry.configurations',
-                title: 'Configuration',
+                title: 'Gestion des inscriptions',
                 type: 'collapsable',
                 icon: 'mat_solid:settings',
                 hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
                 children: [
                     {
                         id: 'aquasentry.configurations.communes',
-                        title: 'Communes',
+                        title: 'Listes des inscriptions',
                         type: 'basic',
-                        link: '/apps/communes',
+                        link: '/apps/inscriptions',
                         icon: 'mat_solid:location_city',
                     },
                     {
                         id: 'aquasentry.configurations.quartiers',
-                        title: 'Quartiers',
+                        title: 'Filières',
                         type: 'basic',
-                        link: '/apps/quartiers',
+                        link: '/apps/filieres',
                         icon: 'mat_solid:map',
                     },
                 ],

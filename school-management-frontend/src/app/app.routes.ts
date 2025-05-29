@@ -7,10 +7,11 @@ import {authenticationGuard} from "../@externals/authentication/guards/authentic
 import {roleChildGuard} from "../@externals/authentication/guards/role-child.guard";
 import { SignalementComponent } from './modules/admin/apps/signalement/signalement-form/signalement-form.component';
 import {signalementResolver} from "./modules/admin/apps/signalement/signalement-resolver";
+import {inscriptionResolver} from "./modules/admin/apps/etudiant/inscription-etudiant/inscription-etudiant.resolver";
 
 export const appRoutes: Route[] = [
 
-    // Redirect empty path to '/aqua-sentry/dashboard'
+    // Redirect empty path to '/school-management/dashboard'
     {path: '', pathMatch: 'full', redirectTo: Helpers.whichPageToNavigate()},
 
     // Auth routes for guests
@@ -38,7 +39,11 @@ export const appRoutes: Route[] = [
 
         children: [
 
-
+            {
+                path: "inscription",
+                loadChildren: () => import("app/modules/admin/apps/etudiant/inscription-etudiant/inscription-etudiant.routes"),
+                resolve: {data: inscriptionResolver}
+            },
             //Public routes
             {
                 path: 'public',
@@ -55,6 +60,14 @@ export const appRoutes: Route[] = [
             },
         ]
     },
+
+    // {
+    //     path: 'public-payment',
+    //     children: [
+    //         {path: '', loadChildren: () => import("../@loga/components/payment/payment.routes")}
+    //     ]
+    // },
+
 
     // Auth routes for authenticated users
     {
@@ -86,7 +99,7 @@ export const appRoutes: Route[] = [
 
             // Dashboards
             {
-                path: 'aqua-sentry',
+                path: 'school-management',
                 canActivateChild: [roleChildGuard],
                 data: {
                     roles: ['ADMINISTRATEUR']
@@ -105,14 +118,7 @@ export const appRoutes: Route[] = [
             {
                 path: 'apps',
                 children: [
-                    {
-                        path: 'signalements',
-                        loadChildren: () => import('app/modules/admin/apps/signalement/signalement.routes'),
-                        canActivateChild: [roleChildGuard],
-                        data: {
-                            roles: ['ADMINISTRATEUR', 'USER']
-                        }
-                    },
+
                     {
                         path: 'users',
                         loadChildren: () => import('app/modules/admin/apps/administration/gestion-utilisateurs/gestion-users.routes'),
@@ -122,15 +128,16 @@ export const appRoutes: Route[] = [
                         }
                     },
                     {
-                        path: 'statuts',
-                        loadChildren: () => import('app/modules/admin/apps/administration/list-statut/statuts.routes'),
+                        path: 'etudiants',
+                        loadChildren: () => import('app/modules/admin/apps/etudiant/etudiant.routes'),
                         canActivateChild: [roleChildGuard],
                         data: {
                             roles: ['ADMINISTRATEUR', 'USER']
                         }
                     },
+
                     {
-                        path: 'gravites',
+                        path: 'niveaux',
                         loadChildren: () => import('app/modules/admin/apps/administration/list-gravite/gravites.routes'),
                         canActivateChild: [roleChildGuard],
                         data: {
@@ -138,21 +145,14 @@ export const appRoutes: Route[] = [
                         }
                     },
                     {
-                        path: 'communes',
+                        path: 'filieres',
                         loadChildren: () => import('app/modules/admin/apps/configuration/list-communes/commune.routes'),
                         canActivateChild: [roleChildGuard],
                         data: {
                             roles: ['ADMINISTRATEUR', 'USER']
                         }
                     },
-                    {
-                        path: 'quartiers',
-                        loadChildren: () => import('app/modules/admin/apps/configuration/list-quartiers/quartiers.routes'),
-                        canActivateChild: [roleChildGuard],
-                        data: {
-                            roles: ['ADMINISTRATEUR', 'USER']
-                        }
-                    }
+
 
                 ]
             },

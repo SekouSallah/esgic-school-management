@@ -1,10 +1,8 @@
 package com.esgic.schoolmanagementbackend;
 
 import com.esgic.schoolmanagementbackend.entities.Role;
-import com.esgic.schoolmanagementbackend.entities.Statut;
 import com.esgic.schoolmanagementbackend.entities.Utilisateur;
 import com.esgic.schoolmanagementbackend.repositories.RoleRepository;
-import com.esgic.schoolmanagementbackend.repositories.StatutRepository;
 import com.esgic.schoolmanagementbackend.repositories.UtilisateurRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
@@ -20,7 +18,6 @@ public class DatabaseInitializer {
 
     private final RoleRepository roleRepository;
     private final UtilisateurRepository utilisateurRepository;
-    private final StatutRepository statutRepository;
     private final PasswordEncoder passwordEncoder;
 
     @Bean
@@ -32,19 +29,19 @@ public class DatabaseInitializer {
                 roleRepository.findByName(roleName).orElseGet(() -> {
                     Role role = new Role();
                     role.setName(roleName);
-                    role.setDescription("Rôle " + roleName + " pour l'application Aqua Sentry.");
+                    role.setDescription("Rôle " + roleName + " pour l'application School Management.");
                     return roleRepository.save(role);
                 });
             }
 
-            if (utilisateurRepository.findByUsername("admin@aqua.com").isEmpty()) {
+            if (utilisateurRepository.findByUsername("admin@esgic.com").isEmpty()) {
                 List<Role> roles = roleRepository.findAll();
 
                 Utilisateur admin = new Utilisateur();
                 admin.setNom("Admin");
                 admin.setPrenom("Super");
-                admin.setUsername("admin@aqua.com");
-                admin.setEmail("admin@aqua.com");
+                admin.setUsername("admin@esgic.com");
+                admin.setEmail("admin@esgic.com");
                 admin.setTelephone("0600000000");
                 admin.setAdresse("1234567890 rue de la ville");
                 admin.setPorte("1234567890");
@@ -56,10 +53,6 @@ public class DatabaseInitializer {
                 System.out.println("Utilisateur administrateur créé avec succès !");
             } else {
                 System.out.println("Utilisateur administrateur déjà existant.");
-            }
-
-            if (statutRepository.findByLibelle("En attente").isEmpty()) {
-                statutRepository.save(Statut.builder().libelle("En attente").build());
             }
         };
     }

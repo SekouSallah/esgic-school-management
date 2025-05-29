@@ -36,7 +36,7 @@ export class UpdateCommuneComponent {
                     next: response => {
                         // Handle successful response
                         this.matDialog.closeAll();
-                        this.dialogService.openDialog('Commune modifiée avec succès', true);
+                        this.dialogService.openDialog('Filière modifiée avec succès', true);
                         this.toggleEdit();
                     },
                     error: err => {

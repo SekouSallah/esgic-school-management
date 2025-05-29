@@ -1,9 +1,9 @@
 package com.esgic.schoolmanagementbackend.security;
 
 public interface Paths {
-    String COMMUNES = "/communes";
-    String QUARTIERS = "/quartiers";
-    String GRAVITES = "/gravites";
+    String COMMUNES = "/filieres";
+    String QUARTIERS = "/inscriptions";
+    String GRAVITES = "/niveaux";
     String SIGNALEMENTS = "/signalements";
-    String INSCRIPTIONS = "/inscriptions";
+
 }

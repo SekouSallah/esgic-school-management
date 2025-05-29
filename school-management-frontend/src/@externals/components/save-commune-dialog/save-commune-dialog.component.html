@@ -1,5 +1,5 @@
 <fuse-loading-bar [autoMode]="showLoading"></fuse-loading-bar>
-<h1 class="text-center text-2xl font-bold" mat-dialog-title>Création d'une commune</h1>
+<h1 class="text-center text-2xl font-bold" mat-dialog-title>Création d'une filiere</h1>
 <mat-dialog-content class="py-6">
     <div class="space-y-6">
         <!-- Alert -->
@@ -14,9 +14,16 @@
             <!-- Name field -->
             <mat-form-field appearance="outline" class="w-full">
                 <mat-label>Nom</mat-label>
-                <input formControlName="nom" id="nom" matInput placeholder="Entrez le nom de la commune">
+                <input formControlName="nom" id="nom" matInput placeholder="Entrez le nom de la filiere">
                 <mat-icon matSuffix>business</mat-icon>
                 <mat-error *ngIf="formGroup.get('nom').hasError('required')">Champ obligatoire</mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="w-full">
+                <mat-label>Libellé</mat-label>
+                <input formControlName="libelle" id="libelle" matInput placeholder="Entrez le libellé de la filiere">
+                <mat-icon matSuffix>business</mat-icon>
+                <mat-error *ngIf="formGroup.get('libelle').hasError('required')">Champ obligatoire</mat-error>
             </mat-form-field>
         </form>
     </div>

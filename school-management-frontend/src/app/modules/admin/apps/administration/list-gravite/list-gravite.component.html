@@ -9,7 +9,7 @@
                 <mat-icon (click)="goBack()" class="icon-size-10 icon" svgIcon="mat_solid:arrow_back"></mat-icon>
             </button>
             <div class="text-4xl font-extrabold tracking-tight truncate-title">
-                Gravités
+                Niveaux d'études
             </div>
         </div>
 
@@ -17,7 +17,7 @@
             <!-- Search -->
             <mat-form-field [subscriptSizing]="'dynamic'" class="fuse-mat-dense fuse-mat-rounded min-w-64">
                 <mat-icon [svgIcon]="'heroicons_solid:magnifying-glass'" class="icon-size-5" matPrefix></mat-icon>
-                <input (keyup)="onSearch()" [autocomplete]="'on'" [formControl]="searchInputControl" [placeholder]="'Rechercher des gravités'"
+                <input (keyup)="onSearch()" [autocomplete]="'on'" [formControl]="searchInputControl" [placeholder]="'Rechercher des niveaux'"
                        matInput>
             </mat-form-field>
         </div>
@@ -61,6 +61,11 @@
                     <ng-container matColumnDef="libelle">
                         <th *matHeaderCellDef mat-header-cell mat-sort-header> Libellé</th>
                         <td *matCellDef="let element" mat-cell> {{ element?.libelle }}</td>
+                    </ng-container>
+                    <!-- Libelle Column -->
+                    <ng-container matColumnDef="montant">
+                        <th *matHeaderCellDef mat-header-cell mat-sort-header> Montant</th>
+                        <td *matCellDef="let element" mat-cell> {{ element?.montant }}</td>
                     </ng-container>
                     <ng-container matColumnDef="createdBy">
                         <th *matHeaderCellDef mat-header-cell mat-sort-header> Créé par</th>
@@ -111,7 +116,7 @@
 
     <ng-container *ngIf="gravites.length <= 0 && !isLoading">
         <div class="p-8 sm:p-16 border-t text-4xl font-semibold tracking-tight text-center">
-            Aucune gravité trouvée!
+            Aucun niveau d'étude trouvé!
         </div>
     </ng-container>
 </div>

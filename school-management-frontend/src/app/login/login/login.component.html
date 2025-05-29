@@ -1,126 +1,68 @@
-<div class="flex flex-col flex-auto items-center sm:justify-center min-w-0 md:p-8">
-    <div class="flex md:w-full md:max-w-6xl sm:rounded-2xl sm:shadow overflow-hidden sm:bg-card">
-        <div class="w-full sm:w-auto py-8 px-4 sm:p-12 md:p-16">
-            <div class="w-full max-w-80 sm:w-80 mx-auto sm:mx-0">
+<fuse-loading-bar [autoMode]="showLoading" style="z-index: 10 !important"></fuse-loading-bar>
 
-                <!-- Title -->
-                <div class="mt-8 text-4xl font-extrabold tracking-tight leading-tight">Connexion</div>
-                <div class="flex items-baseline mt-0.5 font-medium">
-                    <div>Vous souhaitez signaler une fuite ?</div>
-                    <a
-                        [routerLink]="['/public/signaler']"
-                        class="ml-1 text-primary-500 hover:underline">Signaler ici
-                    </a>
-                </div>
+<div class="flex flex-col flex-auto items-center justify-center min-w-0 p-4 sm:p-6 md:p-8" id="login">
+    <div class="w-full max-w-md py-8 px-4 sm:p-12 sm:rounded-2xl sm:shadow sm:bg-white bg-white mx-4 sm:mx-8 lg:mx-auto rounded-lg">
 
-                <!-- Alert -->
-                <fuse-alert
-                    *ngIf="showAlert"
-                    [@shake]="alert.type === 'error'"
-                    [appearance]="'outline'"
-                    [showIcon]="false"
-                    [type]="alert.type"
-                    class="mt-8 -mb-4">
-                    {{ alert.message }}
-                </fuse-alert>
+        <div class="w-full max-w-sm mx-auto">
+            <!-- Logo -->
+            <div class="logo">
+                <img height="192" src="assets/images/logos/amasem.png" width="204" alt="Logo ESGIC">
+            </div>
 
-                <!-- Sign in form -->
-                <form
-                    #signInNgForm="ngForm"
-                    [formGroup]="signInForm"
-                    class="mt-8">
+            <!-- Title -->
+            <h1 class="login-title mt-6 text-4xl font-extrabold tracking-tight leading-tight text-center">Connexion</h1>
 
-                    <!-- Email field -->
-                    <mat-form-field class="w-full">
-                        <mat-label>Adresse e-mail</mat-label>
-                        <input
-                            [formControlName]="'username'"
-                            id="username"
-                            matInput>
-                        <mat-error *ngIf="signInForm.get('username').hasError('required')">
-                            L'adresse e-mail est requise
-                        </mat-error>
-                        <mat-error *ngIf="signInForm.get('username').hasError('email')">
-                            Veuillez entrer une adresse e-mail valide
-                        </mat-error>
-                    </mat-form-field>
+            <!-- Alert -->
+            <fuse-alert
+                *ngIf="showAlert"
+                [@shake]="alert.type === 'error'"
+                [appearance]="'outline'"
+                [dismissible]="true"
+                [showIcon]="true"
+                [type]="alert.type"
+                class="mt-8">
+                {{ alert.message }}
+            </fuse-alert>
 
-                    <!-- Password field -->
-                    <mat-form-field class="w-full">
-                        <mat-label>Mot de passe</mat-label>
-                        <input
-                            #passwordField
-                            [formControlName]="'password'"
-                            id="password"
-                            matInput
-                            type="password">
-                        <button
-                            (click)="passwordField.type === 'password' ? passwordField.type = 'text' : passwordField.type = 'password'"
-                            mat-icon-button
-                            matSuffix
-                            type="button">
-                            <mat-icon
-                                *ngIf="passwordField.type === 'password'"
-                                [svgIcon]="'heroicons_solid:eye'"
-                                class="icon-size-5"></mat-icon>
-                            <mat-icon
-                                *ngIf="passwordField.type === 'text'"
-                                [svgIcon]="'heroicons_solid:eye-slash'"
-                                class="icon-size-5"></mat-icon>
-                        </button>
-                        <mat-error>
-                            Le mot de passe est requis
-                        </mat-error>
-                    </mat-form-field>
+            <!-- Sign in form -->
+            <form #signInNgForm="ngForm" [formGroup]="signInForm" class="mt-8">
 
-                    <!-- Submit button -->
+                <!-- Username field -->
+                <mat-form-field appearance="outline" class="w-full">
+                    <mat-label>Nom d'utilisateur</mat-label>
+                    <input [formControlName]="'username'" id="username" matInput>
+                    <mat-icon class="base-icon" matSuffix>account_box</mat-icon>
+                </mat-form-field>
+
+                <!-- Password field -->
+                <mat-form-field appearance="outline" class="w-full">
+                    <mat-label>Mot de passe</mat-label>
+                    <input #passwordField [formControlName]="'password'" id="password" matInput type="password">
                     <button
-                        (click)="login( signInNgForm?.value)"
-                        [color]="'primary'"
-                        [disabled]="signInForm.disabled"
-                        class="fuse-mat-button-large w-full mt-6"
-                        mat-flat-button>
-                        <span *ngIf="!signInForm.disabled">
-                            Se connecter
-                        </span>
-                        <mat-progress-spinner
-                            *ngIf="signInForm.disabled"
-                            [diameter]="24"
-                            [mode]="'indeterminate'"></mat-progress-spinner>
+                        (click)="passwordField.type === 'password' ? passwordField.type = 'text' : passwordField.type = 'password'"
+                        mat-icon-button
+                        matSuffix
+                        type="button">
+                        <mat-icon *ngIf="passwordField.type === 'password'" [svgIcon]="'heroicons_solid:eye'"></mat-icon>
+                        <mat-icon *ngIf="passwordField.type === 'text'" [svgIcon]="'heroicons_solid:eye-slash'"></mat-icon>
                     </button>
-                </form>
-            </div>
-        </div>
-        <div
-            class="relative hidden md:flex flex-auto items-center justify-center h-full p-16 lg:px-28 overflow-hidden bg-gray-800 dark:border-l">
-            <!-- Background -->
-            <svg class="absolute inset-0 pointer-events-none"
-                 height="100%" preserveAspectRatio="xMidYMax slice" viewBox="0 0 960 540" width="100%" xmlns="http://www.w3.org/2000/svg">
-                <g class="text-gray-700 opacity-25" fill="none" stroke="currentColor" stroke-width="100">
-                    <circle cx="196" cy="23" r="234"></circle>
-                    <circle cx="790" cy="491" r="234"></circle>
-                </g>
-            </svg>
-            <!-- Dots -->
-            <svg class="absolute -top-16 -right-16 text-gray-700"
-                 fill="none" height="192" viewBox="0 0 220 192" width="220">
-                <defs>
-                    <pattern height="20" id="837c3e70-6c3a-44e6-8854-cc48c737b659" patternUnits="userSpaceOnUse" width="20" x="0" y="0">
-                        <rect fill="currentColor" height="4" width="4" x="0" y="0"></rect>
-                    </pattern>
-                </defs>
-                <rect fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" height="192" width="220"></rect>
-            </svg>
-            <!-- Content -->
-            <div class="z-10 relative w-full max-w-2xl">
-                <div class="text-7xl font-bold leading-none text-gray-100">
-                    <div>Bienvenue sur</div>
-                    <div>Aqua Sentry</div>
+                </mat-form-field>
+
+                <!-- Actions -->
+                <div class="inline-flex items-center justify-between w-full mt-1.5">
+                    <a [routerLink]="['/forgot-password']" class="text-md font-medium text-primary-500 hover:underline">Mot de passe oublié?</a>
+                    <a [routerLink]="['/inscription']" class="ml-1 text-primary-500 hover:underline">S'inscrire</a>
                 </div>
-                <div class="mt-6 text-lg tracking-tight leading-6 text-gray-400">
-                    Aqua Sentry permet aux citoyens maliens de signaler rapidement et facilement les fuites d'eau à la SOMAGEP S.A. Contribuez à la préservation de l'eau en signalant une fuite dès aujourd'hui !
-                </div>
-            </div>
+                <!-- Submit button -->
+                <button
+                    (click)="login(signInForm.value)"
+                    [disabled]="signInForm.invalid"
+                    class="w-full py-3 base-bg-color text-white font-bold rounded-lg hover:base-bg-color mt-3"
+                    mat-flat-button>
+                    Se connecter
+                </button>
+
+            </form>
         </div>
     </div>
 </div>

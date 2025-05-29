@@ -35,7 +35,7 @@ export class UpdateGraviteComponent {
             this.graviteService.update(this.data?.gravite?.id, this.data?.gravite).subscribe({
                 next: response => {
                     this.matDialog.closeAll();
-                    this.dialogService.openDialog('Gravité modifiée avec succès', true);
+                    this.dialogService.openDialog('Niveau modifié avec succès', true);
                     this.toggleEdit();
                 },
                 error: err => {

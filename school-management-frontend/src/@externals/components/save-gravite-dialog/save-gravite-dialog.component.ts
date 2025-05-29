@@ -48,7 +48,8 @@ export class SaveGraviteDialogComponent implements OnInit {
 
     ngOnInit(): void {
         this.formGroup = this._formBuilder.group({
-            libelle: ['', Validators.required]
+            libelle: ['', Validators.required],
+            montant: [0, Validators.required]
         })
     }
 

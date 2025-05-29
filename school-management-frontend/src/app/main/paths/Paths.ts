@@ -1,5 +1,5 @@
 export class Paths {
-    private static dashboardRoute = "/aqua-sentry/dashboard";
+    private static dashboardRoute = "/school-management/dashboard";
     private static loginRoute = "/sign-in";
 
     public static dashboard(): string {

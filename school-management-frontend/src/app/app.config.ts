@@ -19,6 +19,7 @@ import {provideIcons} from 'app/core/icons/icons.provider';
 import {mockApiServices} from 'app/mock-api';
 import {TranslocoHttpLoader} from './core/transloco/transloco.http-loader';
 import {authInterceptor} from "../@externals/authentication/interceptors/auth.interceptor";
+import {MatSelectCountryModule} from "@angular-material-extensions/select-country";
 
 export const MY_DATE_FORMATS = {
     parse: {
@@ -35,6 +36,7 @@ export const appConfig: ApplicationConfig = {
     providers: [
         provideAnimations(),
         provideHttpClient(),
+        importProvidersFrom(MatSelectCountryModule.forRoot('fr')),
         provideRouter(appRoutes,
             withPreloading(PreloadAllModules),
             withInMemoryScrolling({scrollPositionRestoration: 'enabled'}),

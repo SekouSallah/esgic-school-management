@@ -1,5 +1,5 @@
 import {Component, OnInit, ViewEncapsulation} from '@angular/core';
-import {CommonModule, NgIf} from '@angular/common';
+import {CommonModule, NgIf, NgOptimizedImage} from '@angular/common';
 import {FormsModule, ReactiveFormsModule, UntypedFormBuilder, UntypedFormGroup, Validators} from "@angular/forms";
 import {FuseAlertComponent, FuseAlertType} from "../../../@fuse/components/alert";
 import {MatButtonModule} from "@angular/material/button";
@@ -8,9 +8,10 @@ import {MatFormFieldModule} from "@angular/material/form-field";
 import {MatIconModule} from "@angular/material/icon";
 import {MatInputModule} from "@angular/material/input";
 import {MatProgressSpinnerModule} from "@angular/material/progress-spinner";
-import {ActivatedRoute, Router, RouterLink} from "@angular/router";
+import {ActivatedRoute, Router, RouterLink, RouterOutlet} from "@angular/router";
 import {fuseAnimations} from "../../../@fuse/animations";
 import {LayoutModule} from "@angular/cdk/layout";
+import {FuseLoadingBarComponent} from "../../../@fuse/components/loading-bar";
 import {UserLogin} from "../../main/models/login.model";
 import {AuthService} from "../../main/services/auth.service";
 import {Helpers} from "../../main/helpers/Helpers";
@@ -18,7 +19,7 @@ import {Helpers} from "../../main/helpers/Helpers";
 @Component({
     selector: 'login',
     standalone: true,
-    imports: [LayoutModule, RouterLink, NgIf, FuseAlertComponent, FormsModule, ReactiveFormsModule, CommonModule, FormsModule, FuseAlertComponent, MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatProgressSpinnerModule],
+    imports: [LayoutModule, RouterLink, NgIf, FuseAlertComponent, FormsModule, ReactiveFormsModule, CommonModule, FormsModule, FuseAlertComponent, MatButtonModule, MatCheckboxModule, MatFormFieldModule, MatIconModule, MatInputModule, MatProgressSpinnerModule,  FuseLoadingBarComponent, FuseLoadingBarComponent],
     templateUrl: './login.component.html',
     animations: fuseAnimations,
     encapsulation: ViewEncapsulation.None,
@@ -93,6 +94,4 @@ export class LoginComponent implements OnInit {
             }
         })
     }
-
-
 }

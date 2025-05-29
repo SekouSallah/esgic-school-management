@@ -120,16 +120,16 @@
                                 </mat-error>
                             </mat-form-field>
 
-                            <app-select-commune
-                                [formControlName]="'commune'"
+                            <app-select-filiere
+                                [formControlName]="'filiere'"
                                 [specs]="communes"
                                 [appearance]="'outline'"
                                 label="Commune"
-                                placeholder="Sélectionnez une commune"
+                                placeholder="Sélectionnez une filiere"
                                 class="w-full"
-                                aria-describedby="commune-error"
+                                aria-describedby="filiere-error"
                                 required
-                            ></app-select-commune>
+                            ></app-select-filiere>
                             <app-select-quartier
                                 [formControlName]="'quartier'"
                                 [specs]="quartiers"
@@ -140,16 +140,16 @@
                                 aria-describedby="quartier-error"
                                 required
                             ></app-select-quartier>
-                            <app-select-gravite
-                                [formControlName]="'gravite'"
+                            <app-select-niveau
+                                [formControlName]="'niveau'"
                                 [specs]="gravites"
                                 [appearance]="'outline'"
                                 label="Gravité"
                                 placeholder="Sélectionnez une gravité"
                                 class="w-full col-span-1 sm:col-span-2"
-                                aria-describedby="gravite-error"
+                                aria-describedby="niveau-error"
                                 required
-                            ></app-select-gravite>
+                            ></app-select-niveau>
 
                             <button
                                 (click)="submitSignalement()"

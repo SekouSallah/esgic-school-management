@@ -13,7 +13,7 @@ import {Router} from "@angular/router";
 import {UtilisateurEntity} from "../../../../main/Utils/utilisateur.page";
 
 @Component({
-    selector: 'dashboard-aqua-sentry',
+    selector: 'dashboard-school-management',
     standalone: true,
     imports: [CommonModule, MatButtonModule, MatButtonToggleModule, MatIconModule, MatMenuModule, MatRippleModule, MatTableModule, MatTabsModule, NgApexchartsModule],
     templateUrl: './dashboard-amasem.component.html',

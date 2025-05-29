@@ -2,7 +2,7 @@
     <form #specForm="ngForm" (ngSubmit)="updateCommune(specForm)" class="p-4 bg-card overflow-hidden">
         <div class="flex flex-col gt-xs:flex-row">
             <mat-form-field appearance="outline" class="flex-auto gt-xs:pr-3">
-                <mat-label>Nom de la commune</mat-label>
+                <mat-label>Nom de la filiere</mat-label>
                 <textarea
                     [(ngModel)]="data.commune.nom"
                     [readonly]="!isEditing"
@@ -17,7 +17,27 @@
                     class="icon-size-5"
                     matPrefix></mat-icon>
                 <mat-error *ngIf="specForm.controls.nom?.invalid && specForm.controls.nom?.touched">
-                    Le nom de la commune est requise.
+                    Le nom de la filiere est requise.
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline" class="flex-auto gt-xs:pr-3">
+                <mat-label>Libelle de la filiere</mat-label>
+                <textarea
+                    [(ngModel)]="data.commune.libelle"
+                    [readonly]="!isEditing"
+                    class="w-full"
+                    matInput
+                    name="libelle"
+                    placeholder="Libellé"
+                    required
+                    rows="3"></textarea>
+                <mat-icon
+                    [svgIcon]="'heroicons_solid:bars-3-bottom-left'"
+                    class="icon-size-5"
+                    matPrefix></mat-icon>
+                <mat-error *ngIf="specForm.controls.libelle.invalid && specForm.controls.libelle?.touched">
+                    Le libellé de la filiere est requise.
                 </mat-error>
             </mat-form-field>
         </div>

@@ -2,7 +2,7 @@
     <form #specForm="ngForm" (ngSubmit)="updateGravite(specForm)" class="p-4 bg-card overflow-hidden">
         <div class="flex flex-col gt-xs:flex-row">
             <mat-form-field appearance="outline" class="flex-auto gt-xs:pr-3">
-                <mat-label>Libellé de la gravité</mat-label>
+                <mat-label>Libellé du niveau</mat-label>
                 <textarea
                     [(ngModel)]="data.gravite.libelle"
                     [readonly]="!isEditing"
@@ -17,7 +17,16 @@
                     class="icon-size-5"
                     matPrefix></mat-icon>
                 <mat-error *ngIf="specForm.controls.libelle?.invalid && specForm.controls.libelle?.touched">
-                    Le libellé de la gravité est requis.
+                    Le libellé du niveau est requis.
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field appearance="outline" class="flex-auto gt-xs:pr-3">
+                <mat-label>Montant</mat-label>
+                <input [(ngModel)]="data.gravite.montant"
+                       [readonly]="!isEditing" type="number" name="montant" matInput placeholder="Entrez le montant du niveau" required>
+                <mat-icon matSuffix>business</mat-icon>
+                <mat-error *ngIf="specForm.controls.montant?.invalid && specForm.controls.montant?.touched">
+                    Le montant du niveau est requis.
                 </mat-error>
             </mat-form-field>
         </div>

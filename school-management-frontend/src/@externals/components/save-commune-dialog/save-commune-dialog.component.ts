@@ -48,7 +48,8 @@ export class SaveCommuneDialogComponent implements OnInit{
 
     ngOnInit(): void {
         this.formGroup = this._formBuilder.group({
-            nom: ['', Validators.required]
+            nom: ['', Validators.required],
+            libelle: ['', Validators.required]
         })
     }
 

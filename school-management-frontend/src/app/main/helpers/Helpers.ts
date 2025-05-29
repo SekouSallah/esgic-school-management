@@ -96,8 +96,8 @@ export class Helpers {
 
     public static whichPageToNavigate(): string {
         if (this.hasRole('ADMINISTRATEUR')) {
-            return 'aqua-sentry/dashboard';
+            return 'school-management/dashboard';
         }
-        return "aqua-sentry/dashboard";
+        return "school-management/dashboard";
     }
 }
