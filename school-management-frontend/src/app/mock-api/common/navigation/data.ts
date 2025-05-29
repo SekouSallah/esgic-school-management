@@ -11,6 +11,14 @@ export const defaultNavigation: FuseNavigationItem[] = [
         icon: 'mat_solid:school', // Icon for education/school management
         children: [
             {
+                id: 'school-management.dashboard',
+                title: 'Tableau de Bord',
+                type: 'basic',
+                icon: 'mat_solid:dashboard',
+                link: '/school-management/dashboard',
+                hidden: () => !Helpers.hasRole('ADMINISTRATEUR'),
+            },
+            {
                 id: 'school-management.students',
                 title: 'Gestion des étudiants',
                 type: 'collapsable',
