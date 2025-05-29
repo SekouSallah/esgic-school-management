@@ -5,10 +5,13 @@ import com.esgic.schoolmanagementbackend.services.InscriptionService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.Optional;
+
 @RestController
-@RequestMapping("/api/inscriptions")
+@RequestMapping("inscriptions")
 @RequiredArgsConstructor
 public class InscriptionController {
 
@@ -30,5 +33,18 @@ public class InscriptionController {
     @PutMapping("/{id}/annuler")
     public Inscription annulerInscription(@PathVariable Long id) {
         return inscriptionService.annuler(id);
+    }
+
+
+    @GetMapping("page")
+    public ResponseEntity<Page<Inscription>> allPage(Pageable pageable) {
+        return ResponseEntity.ok(inscriptionService.allPage(pageable));
+    }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<Inscription> get(@PathVariable Long id) {
+        Optional<Inscription> quartier = inscriptionService.getNiveauById(id);
+        return quartier.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 }

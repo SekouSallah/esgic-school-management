@@ -96,4 +96,8 @@ public class UtilisateurService {
     public ResponseEntity<Page<Utilisateur>> getAllUtilisateurs(Pageable pageable) {
         return ResponseEntity.ok(utilisateurRepository.findAll(pageable));
     }
+
+    public ResponseEntity<?> getById(Long id) {
+        return ResponseEntity.ok(utilisateurRepository.findById(id).orElse(new Utilisateur()));
+    }
 }

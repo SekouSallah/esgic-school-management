@@ -177,11 +177,11 @@ export class ListUtilisateurComponent implements OnInit, OnDestroy {
                 this.utilisateurService.deleteUser(id).subscribe({
                     next: data => {
                         this.reloadDataForPagination();
-                        this._dialogService.openDialog(data['data'], true);
+                        this._dialogService.openDialog("Utilisateur supprimé avec succès", true);
 
                     },
                     error: err => {
-                        this._dialogService.openDialog(err.error.message, false);
+                        this._dialogService.openDialog(err.error, false);
                     }
                 })
             }

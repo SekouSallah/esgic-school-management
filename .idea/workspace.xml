@@ -5,355 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e22166fb-9efd-499b-a653-5d6bd88cfda2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/EtudiantController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/FiliereController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/InscriptionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/dtos/EtudiantDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Etudiant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Inscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/enums/StatutInscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/enums/TypeInscription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/EtudiantRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/InscriptionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/EtudiantService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/InscriptionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/@externals/enums/statut-inscription.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/app/main/models/etudiant.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/etudiant/etudiant-list.resolver.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/etudiant/etudiant.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/etudiant/inscription-etudiant/inscription-etudiant.routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/images/backgrounds/amasem_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ae.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/af.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ai.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/al.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/am.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ao.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/aq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/arab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/as.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/at.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/au.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/aw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ax.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/az.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ba.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/be.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/br.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/by.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/bz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ca.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cefta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ci.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ck.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/co.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/cz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/de.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/dg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/dj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/dk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/dm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/do.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/dz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/eac.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ec.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/eg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/eh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/er.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/es-ct.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/es-ga.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/es-pv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/es.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/et.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/eu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/fi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/fj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/fk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/fm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/fo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/fr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ga.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gb-eng.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gb-nir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gb-sct.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gb-wls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/gy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/hk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/hm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/hn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/hr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ht.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/hu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/id.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ie.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/il.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/im.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/in.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/io.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/iq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/is.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/it.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/je.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/jm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/jo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/jp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ke.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/kg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/kh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ki.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/km.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/kn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/kp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/kr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/kw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ky.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/kz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/la.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/lb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/lc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/li.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/lk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/lr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/lt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/lu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/lv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ly.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ma.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/md.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/me.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ml.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ms.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/my.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/mz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/na.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/nc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ne.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/nf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ng.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ni.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/nl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/no.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/np.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/nr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/nu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/nz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/om.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ph.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ps.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/pw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/py.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/qa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/re.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ro.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/rs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ru.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/rw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/se.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sh-ac.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sh-hl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sh-ta.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/si.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/so.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ss.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/st.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/sz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/td.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/th.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/to.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/tz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ua.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ug.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/um.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/un.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/us.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/uy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/uz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/va.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/vc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ve.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/vg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/vi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/vn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/vu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/wf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ws.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/xk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/xx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/ye.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/yt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/za.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/zm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/assets/svg-country-flags/svg/zw.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/DashboardStatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/DashboardStats.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/DashboardStatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/app/main/models/inscription.model.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/etudiant/inscription-list.resolver.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/etudiant/inscription.routes.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/DatabaseInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/DatabaseInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/CommuneController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/GraviteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/NiveauController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/QuartierController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/SignalementController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/StatutController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/dtos/SignalementDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Commune.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Filiere.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Gravite.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Niveau.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Quartier.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Signalement.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/entities/Statut.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/enums/FuiteGravite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/enums/FuiteType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/enums/SignalementEtat.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/CommuneRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/FiliereRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/GraviteRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/QuartierRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/NiveauRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/SignalementRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/StatutRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/Paths.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/Paths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/CommuneService.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/FiliereService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/GraviteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/NiveauService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/QuartierService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/SignalementService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/StatutService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/@externals/authentication/services/commune.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/@externals/authentication/services/commune.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/@externals/authentication/services/gravite.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/@externals/authentication/services/gravite.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/@externals/components/save-commune-dialog/save-commune-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/@externals/components/save-commune-dialog/save-commune-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/@externals/components/save-commune-dialog/save-commune-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/@externals/components/save-commune-dialog/save-commune-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/@externals/components/save-gravite-dialog/save-gravite-dialog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/@externals/components/save-gravite-dialog/save-gravite-dialog.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/@externals/components/save-gravite-dialog/save-gravite-dialog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/@externals/components/save-gravite-dialog/save-gravite-dialog.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/InscriptionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/InscriptionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/UtilisateurController.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/controllers/UtilisateurController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/InscriptionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/repositories/InscriptionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/configs/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/security/configs/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/InscriptionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/InscriptionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/UtilisateurService.java" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-backend/src/main/java/com/esgic/schoolmanagementbackend/services/UtilisateurService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/login/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/login/login/login.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/login/login/login.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/login/login/login.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/login/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/login/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/main/helpers/Helpers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/main/helpers/Helpers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/main/models/commune.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/main/models/commune.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/main/models/gravite.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/main/models/gravite.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/main/paths/Paths.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/main/paths/Paths.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/layout/layout.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/layout/layout.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/layout/layouts/vertical/classy/classy.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/layout/layouts/vertical/classy/classy.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/main/models/etudiant.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/main/models/etudiant.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/mock-api/common/navigation/data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/mock-api/common/navigation/data.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/administration/list-gravite/list-gravite.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/administration/list-gravite/list-gravite.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/administration/list-gravite/list-gravite.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/administration/list-gravite/list-gravite.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/list-communes/list-commune.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/list-communes/list-commune.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/list-communes/list-commune.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/list-communes/list-commune.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/update-commune/update-commune.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/update-commune/update-commune.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/update-commune/update-commune.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/update-commune/update-commune.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/update-gravite/update-gravite.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/update-gravite/update-gravite.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/update-gravite/update-gravite.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/configuration/update-gravite/update-gravite.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/signalement/signalement-form/signalement-form.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/signalement/signalement-form/signalement-form.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/signalement/signalement-form/signalement-form.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/signalement/signalement-form/signalement-form.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/administration/gestion-utilisateurs/list-utilisateur/list-utilisateur.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/administration/gestion-utilisateurs/list-utilisateur/list-utilisateur.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/etudiant/inscription-etudiant/inscription-etudiant.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/etudiant/inscription-etudiant/inscription-etudiant.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/dashboards/dashboard-amasem/dashboard-amasem.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/dashboards/dashboard-amasem/dashboard-amasem.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/dashboards/dashboard-amasem/dashboard-amasem.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/dashboards/dashboard-amasem/dashboard-amasem.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/dashboards/dashboard-amasem/dashboard-amasem.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/dashboards/dashboard-amasem/dashboard-amasem.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/styles/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/dashboards/dashboard-amasem/dashboard-amasem.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/dashboards/dashboard-amasem/dashboard-amasem.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/school-management-frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/school-management-frontend/src/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -363,8 +39,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="TypeScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -411,7 +87,7 @@
     "git-widget-placeholder": "main",
     "go.import.settings.migrated": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "/home/sekou/j2ee-spring-apps/esgic-school-management/school-management-frontend/src/assets",
+    "last_opened_file_path": "/home/sekou/j2ee-spring-apps/esgic-school-management/school-management-frontend/src/app/modules/admin/apps/etudiant",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -428,6 +104,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/school-management-frontend/src/app/modules/admin/apps/etudiant" />
       <recent name="$PROJECT_DIR$/school-management-frontend/src/assets" />
       <recent name="$PROJECT_DIR$/school-management-frontend/src/assets/images/backgrounds" />
       <recent name="$PROJECT_DIR$/school-management-frontend" />
@@ -497,7 +174,7 @@
       <workItem from="1748441367424" duration="598000" />
       <workItem from="1748454980139" duration="1679000" />
       <workItem from="1748456687718" duration="15336000" />
-      <workItem from="1748475529991" duration="7960000" />
+      <workItem from="1748475529991" duration="16634000" />
     </task>
     <servers />
   </component>

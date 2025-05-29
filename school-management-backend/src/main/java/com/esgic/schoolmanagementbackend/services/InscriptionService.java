@@ -10,6 +10,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
+import java.util.Optional;
+
 /**
  * @author Sékou Sallah Sow <sowsekou@hotmail.com>
  */
@@ -63,6 +65,14 @@ public class InscriptionService {
         }
 
         return inscriptionRepository.save(inscription);
+    }
+
+    public Page<Inscription> allPage(Pageable pageable) {
+        return inscriptionRepository.findAll(pageable);
+    }
+
+    public Optional<Inscription> getNiveauById(Long id) {
+        return inscriptionRepository.findById(id);
     }
 
 }

@@ -7,6 +7,7 @@ import {StatutInscription} from "../../../@externals/enums/statut-inscription";
 export class Etudiant {
     id: number;
     prenom: string;
+    nom: string;
     adresse: string;
     email: string;
     telephone: string;

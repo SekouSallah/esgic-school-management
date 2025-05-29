@@ -51,4 +51,9 @@ public class UtilisateurController {
     public ResponseEntity<Page<Utilisateur>> allPage(Pageable pageable) {
         return utilisateurService.getAllUtilisateurs(pageable);
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getById(@PathVariable Long id) {
+        return utilisateurService.getById(id);
+    }
 }

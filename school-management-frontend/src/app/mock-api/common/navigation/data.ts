@@ -2,80 +2,73 @@
 import { FuseNavigationItem } from '@fuse/components/navigation';
 import { Helpers } from 'app/main/helpers/Helpers';
 
+
 export const defaultNavigation: FuseNavigationItem[] = [
     {
-        id: 'aquasentry',
+        id: 'school-management',
         title: 'SCHOOL MANAGEMENT',
         type: 'group',
-        icon: 'mat_solid:water_drop', // Icône plus adaptée pour Aqua Sentry (eau)
+        icon: 'mat_solid:school', // Icon for education/school management
         children: [
-            // {
-            //     id: 'aquasentry.dashboard',
-            //     title: 'Tableau de Bord',
-            //     type: 'basic',
-            //     icon: 'mat_solid:dashboard',
-            //     link: '/school-management/dashboard',
-            //     hidden: () => !Helpers.hasRole('ADMINISTRATEUR'),
-            // },
             {
-                id: 'aquasentry.signalement',
+                id: 'school-management.students',
                 title: 'Gestion des étudiants',
                 type: 'collapsable',
-                icon: 'mat_solid:report_problem', // Icône adaptée pour signalements
+                icon: 'mat_solid:people_alt', // Icon for student management
                 hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
                 children: [
                     {
-                        id: 'aquasentry.signalement.list',
+                        id: 'school-management.students.list',
                         title: 'Liste des étudiants',
                         type: 'basic',
                         link: '/apps/etudiants',
-                        icon: 'mat_solid:leak_add', // Icône pour fuites
+                        icon: 'mat_solid:list_alt', // Icon for a list of students
                     },
                     {
-                        id: 'aquasentry.configurations.gravites',
+                        id: 'school-management.students.levels',
                         title: 'Niveaux d\'études',
                         type: 'basic',
                         link: '/apps/niveaux',
-                        icon: 'mat_solid:warning', // Icône pour gravité
+                        icon: 'mat_solid:stairs', // Icon for academic levels
                     },
                 ],
             },
             {
-                id: 'aquasentry.inscription',
+                id: 'school-management.inscriptions',
                 title: 'Gestion des inscriptions',
                 type: 'collapsable',
-                icon: 'mat_solid:report_problem', // Icône adaptée pour signalements
+                icon: 'mat_solid:how_to_reg', // Icon for registrations/inscriptions
                 hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
                 children: [
                     {
-                        id: 'aquasentry.inscription.list',
+                        id: 'school-management.inscriptions.list',
                         title: 'Liste des inscriptions',
                         type: 'basic',
-                        link: '/apps/inscription',
-                        icon: 'mat_solid:leak_add', // Icône pour fuites
+                        link: '/apps/inscriptions',
+                        icon: 'mat_solid:assignment', // Icon for a list of inscriptions
                     },
                     {
-                        id: 'aquasentry.inscription.filieres',
+                        id: 'school-management.inscriptions.filieres',
                         title: 'Filières',
                         type: 'basic',
                         link: '/apps/filieres',
-                        icon: 'mat_solid:warning', // Icône pour gravité
+                        icon: 'mat_solid:category', // Icon for academic programs/filieres
                     },
                 ],
             },
             {
-                id: 'aquasentry.administrations',
+                id: 'school-management.administrations',
                 title: 'Administration',
                 type: 'collapsable',
-                icon: 'mat_solid:admin_panel_settings', // Icône pour administration
+                icon: 'mat_solid:admin_panel_settings', // Retained: perfect for administration
                 hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
                 children: [
                     {
-                        id: 'aquasentry.administration.utilisateurs',
+                        id: 'school-management.administration.users',
                         title: 'Utilisateurs',
                         type: 'basic',
                         link: '/apps/users',
-                        icon: 'mat_solid:people', // Icône pour utilisateurs
+                        icon: 'mat_solid:people', // Retained: ideal for users
                         hidden: () => !Helpers.hasRoles(['ADMINISTRATEUR', 'USER']),
                     },
                 ],
@@ -83,7 +76,6 @@ export const defaultNavigation: FuseNavigationItem[] = [
         ]
     }
 ];
-
 export const compactNavigation: FuseNavigationItem[] = [
     {
         id: 'aquasentry',

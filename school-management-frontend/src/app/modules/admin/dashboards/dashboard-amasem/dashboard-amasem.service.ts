@@ -1,11 +1,14 @@
 import {Injectable} from '@angular/core';
 import {BehaviorSubject, Observable, tap} from "rxjs";
 import {HttpClient} from "@angular/common/http";
+import {environment} from "../../../../../environments/environment";
+import {DashboardData} from "./dashboard-amasem.component";
 
 @Injectable({providedIn: 'root'})
 export class DashboardAmasemService {
     private _data: BehaviorSubject<any> = new BehaviorSubject(null);
 
+    private apiUrl = environment.apiUrl;
     /**
      * Constructor
      */
@@ -30,11 +33,7 @@ export class DashboardAmasemService {
     /**
      * Get data
      */
-    getData(): Observable<any> {
-        return this._httpClient.get('api/amasem/dashboard').pipe(
-            tap((response: any) => {
-                this._data.next(response);
-            }),
-        );
+    getData(): Observable<DashboardData> {
+        return this._httpClient.get<DashboardData>(this.apiUrl + 'dashboard/stats');
     }
 }

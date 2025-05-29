@@ -15,19 +15,10 @@ button {
     h1 {
         @apply text-2xl;
     }
-    h2 {
-        @apply text-lg;
-    }
     p {
         @apply text-base;
     }
     .card {
         @apply p-4;
-    }
-    .text-3xl {
-        @apply text-2xl;
-    }
-    .text-4xl {
-        @apply text-3xl;
     }
 }

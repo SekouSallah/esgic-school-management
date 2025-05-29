@@ -135,6 +135,14 @@ export const appRoutes: Route[] = [
                             roles: ['ADMINISTRATEUR', 'USER']
                         }
                     },
+                    {
+                        path: 'inscriptions',
+                        loadChildren: () => import('app/modules/admin/apps/etudiant/inscription.routes'),
+                        canActivateChild: [roleChildGuard],
+                        data: {
+                            roles: ['ADMINISTRATEUR', 'USER']
+                        }
+                    },
 
                     {
                         path: 'niveaux',

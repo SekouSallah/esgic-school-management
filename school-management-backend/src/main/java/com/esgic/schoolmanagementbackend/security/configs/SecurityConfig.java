@@ -42,7 +42,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(ar -> ar.requestMatchers(openEndpointsProvider.getOpenEndpoints().toArray(new String[0])
                 ).permitAll())
                 .authorizeHttpRequests(ar -> ar.requestMatchers(GET, COMMUNES, QUARTIERS, GRAVITES).permitAll())
-                .authorizeHttpRequests(ar -> ar.requestMatchers(POST, COMMUNES, QUARTIERS, GRAVITES, SIGNALEMENTS).permitAll())
+                .authorizeHttpRequests(ar -> ar.requestMatchers(POST, COMMUNES, QUARTIERS, GRAVITES, SIGNALEMENTS, "etudiants/inscription").permitAll())
                 .authorizeHttpRequests(ar -> ar.anyRequest().authenticated())
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
                 .cors(Customizer.withDefaults())

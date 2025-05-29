@@ -2,6 +2,7 @@ package com.esgic.schoolmanagementbackend.repositories;
 
 
 import com.esgic.schoolmanagementbackend.entities.Inscription;
+import com.esgic.schoolmanagementbackend.enums.StatutInscription;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -19,4 +20,6 @@ public interface InscriptionRepository extends JpaRepository<Inscription, Long> 
             "LOWER(i.etudiant.telephone) LIKE LOWER(CONCAT('%', :keyword, '%')) OR " +
             "LOWER(i.etudiant.adresse) LIKE LOWER(CONCAT('%', :keyword, '%'))")
     Page<Inscription> searchByEtudiant(String keyword, Pageable pageable);
+
+    Long countByStatutInscription(StatutInscription statutInscription);
 }
